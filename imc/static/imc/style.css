@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url('static_files/background.svg');
+}
+
+.content-box{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-box{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    border-radius: 15px;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.title-box{
+    margin-bottom: 30px;
+}
+
+.input-box{
+    margin-bottom: 10px;
+}
