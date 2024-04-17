@@ -3,16 +3,9 @@ class Imc():
         self.weight = weight
         self.height = height
 
-    def transform_float(self, string):
-        if ',' in string:
-            result = float(string.replace(',','.'))
-            return result
-        return float(string)
-
     def imc_calculated(self):
-        weight_ = self.transform_float(self.weight)
-        height_ = self.transform_float(self.height)
-        print(type(weight_),type(height_) )
+        weight_ = self.weight
+        height_ = self.height
         imc =  round(weight_/(height_*height_),2)
         
         if imc < 16:

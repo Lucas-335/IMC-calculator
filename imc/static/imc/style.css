@@ -58,3 +58,20 @@ body{
 .result-box{
     margin-top: 35px;
 }
+
+.errorlist{
+    list-style-type: none;
+    color: #fff;
+}
+
+.error-box,
+.result-box{
+    margin-top: 35px;
+}
+.error-box{
+    text-align: center;
+    background-color: rgb(165, 1, 1);
+    border-radius: 5px;
+    font-size: 0.7em;
+
+}
