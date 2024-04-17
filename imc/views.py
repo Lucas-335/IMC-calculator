@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .forms import ImcForm
+from.utils import Imc
 # Create your views here.
 
 def calculate(request):
@@ -11,8 +12,8 @@ def calculate(request):
             weight_ = form.cleaned_data.get('weight')
             height_ = form.cleaned_data.get('height')
 
-            imc =  round(weight_/(height_*height_),2)
-
+            imc_calculated = Imc(weight_, height_)  
+            
             context = {
                 'form': form,
                 'imc': imc,

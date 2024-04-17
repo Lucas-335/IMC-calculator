@@ -14,14 +14,21 @@
                 <h2>Calculadora de IMC</h2>
             </div>
             <form action="" method="POST">
+                {% csrf_token %}
                 {% for field in form %}
                     <div class="input-box">
                         <label for="{{field.id_for_label}}">{{field.label}}</label>
                         {{field}}
                     </div>
                 {% endfor %}
-                <input type="submit">
+                <input type="submit" class="input-button" value="Calcular">
             </form>
+
+            {% if imc %}
+                <div class="result-box">
+                    <p>Resultado: {{imc}}</p>
+                </div>
+            {% endif %}
         </div>
     </div>
 </body>
