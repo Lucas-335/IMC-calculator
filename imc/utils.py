@@ -3,8 +3,17 @@ class Imc():
         self.weight = weight
         self.height = height
 
+    def transform_float(self, string):
+        if ',' in string:
+            result = float(string.replace(',','.'))
+            return result
+        return float(string)
+
     def imc_calculated(self):
-        imc =  round(self.weight_/(self.height_*self.height_),2)
+        weight_ = self.transform_float(self.weight)
+        height_ = self.transform_float(self.height)
+        print(type(weight_),type(height_) )
+        imc =  round(weight_/(height_*height_),2)
         
         if imc < 16:
             return f'{imc} - magreza grave'

@@ -12,8 +12,9 @@ def calculate(request):
             weight_ = form.cleaned_data.get('weight')
             height_ = form.cleaned_data.get('height')
 
-            imc_calculated = Imc(weight_, height_)  
-            
+            print(weight_)
+            imc_instance = Imc(weight_, height_)  
+            imc = f'Resultado: {imc_instance.imc_calculated()}'
             context = {
                 'form': form,
                 'imc': imc,

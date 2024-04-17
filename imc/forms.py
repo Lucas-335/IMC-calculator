@@ -1,9 +1,9 @@
 from django import forms
 
 class ImcForm(forms.Form):
-    weight = forms.FloatField(
+    weight = forms.CharField(
         label="Peso:", 
         widget=forms.TextInput(attrs={'class':'input-text'}))
-    height = forms.FloatField(
+    height = forms.CharField(
         label="Altura:", 
         widget=forms.TextInput(attrs={'class':'input-text'}))
