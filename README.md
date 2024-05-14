@@ -13,5 +13,5 @@
  Deploy:
  <div style="display:inline-block">
    <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" align="center">:
-  <a href="https://imc-calculator-ruddy.vercel.app/">
+  <a href="https://imc-calculator-ruddy.vercel.app/">Link</a>
  </div>
